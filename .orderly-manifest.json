@@ -2,7 +2,7 @@
   "npmName": "dextrous-news",
   "pluginId": "dextrous-news",
   "repoUrl": "https://github.com/dextrousfinance/dextrous-news",
-  "tags": ["news", "widget", "trading"],
+  "tags": ["Widget", "Trading", "UI"],
   "storybookUrl": null,
   "storybookTooltip": null,
   "usagePrompt": "Adds a live market news panel to the desktop trading page. Streams categorized crypto news (perps, DeFi, RWA, listings) over WebSocket with sentiment indicators and one-click links to each token's perp market. Requires a Gloria AI feed token passed as the gloriaToken option.",
