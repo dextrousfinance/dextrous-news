@@ -27,3 +27,7 @@ esm/
 .npmrc
 
 .claude
+
+demo/token.ts
+
+demo/token.ts

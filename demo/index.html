@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DextrousNews - local demo</title>
+<style>
+  body { margin: 0; background: #0b0e11; color: #eaecef; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .fake-dex { max-width: 1280px; margin: 0 auto; }
+  .fake-topbar { display: flex; align-items: center; gap: 24px; padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); font-weight: 700; }
+  .fake-topbar .logo { color: #f0b90b; }
+  .fake-grid { display: grid; grid-template-columns: 1fr 300px; gap: 1px; background: rgba(255,255,255,0.06); }
+  .fake-chart, .fake-orderbook, .fake-entry { background: #0b0e11; padding: 16px; }
+  .fake-chart { height: 300px; display: flex; align-items: center; justify-content: center; color: #444; font-size: 14px; }
+  .fake-orderbook { height: 300px; color: #444; font-size: 13px; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #666; margin-bottom: 10px; }
+  .row { display: flex; justify-content: space-between; padding: 3px 0; font-family: monospace; font-size: 12px; }
+  .ask { color: #f6465d; } .bid { color: #0ecb81; }
+</style>
+</head>
+<body>
+  <div class="fake-dex">
+    <div class="fake-topbar"><span class="logo">dextrous.finance</span><span>BTC-PERP</span><span style="color:#0ecb81">$60,286.10</span></div>
+    <div class="fake-grid">
+      <div class="fake-chart">[ chart area — placeholder ]</div>
+      <div class="fake-orderbook">
+        <div class="label">Order Book</div>
+        <div class="row ask"><span>60,364.89</span><span>0.0016</span></div>
+        <div class="row ask"><span>60,364.08</span><span>0.0016</span></div>
+        <div class="row bid"><span>60,244.31</span><span>0.0016</span></div>
+        <div class="row bid"><span>60,243.51</span><span>0.0016</span></div>
+      </div>
+    </div>
+    <!-- The plugin injects below the trading layout - same position as Trading.Layout.Desktop interceptor -->
+    <div id="root"></div>
+  </div>
+  <script src="./bundle.js"></script>
+</body>
+</html>

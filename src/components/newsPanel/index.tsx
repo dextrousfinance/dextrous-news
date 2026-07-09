@@ -127,6 +127,10 @@ export function NewsPanel({
         if (msg.type !== "data" || msg.action === "subscribed") return;
         const item: NewsItem | undefined = msg.content;
         if (!item) return;
+        // WS items may lack a numeric timestamp — stamp arrival time so "time ago" renders
+        if (!Number.isFinite(Number(item.timestamp))) {
+          item.timestamp = Date.now() / 1000;
+        }
         const iid = String(item.id || "");
         // Same item arrives once per subscribed category — dedup by id
         if (iid && seenIds.current.has(iid)) return;
