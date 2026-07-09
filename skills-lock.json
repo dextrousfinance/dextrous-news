@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "orderly-plugin-add": {
+      "source": "OrderlyNetwork/orderly-skills",
+      "sourceType": "github",
+      "skillPath": "skills/orderly-plugin-add/SKILL.md",
+      "computedHash": "ab6ea5157053a2641843f5ba5efafd48e14fc4241db889179d2e1c0420b0f4ec"
+    },
+    "orderly-plugin-create": {
+      "source": "OrderlyNetwork/orderly-skills",
+      "sourceType": "github",
+      "skillPath": "skills/orderly-plugin-create/SKILL.md",
+      "computedHash": "23f6900a877503322c1865bd98c48ba7c5de3503dbd44f5669515decacb95afa"
+    },
+    "orderly-plugin-submit": {
+      "source": "OrderlyNetwork/orderly-skills",
+      "sourceType": "github",
+      "skillPath": "skills/orderly-plugin-submit/SKILL.md",
+      "computedHash": "438ef76c854b2cc7599664400a8da4a2ffc5eca7a36d3574efb8301455a9265f"
+    },
+    "orderly-plugin-write": {
+      "source": "OrderlyNetwork/orderly-skills",
+      "sourceType": "github",
+      "skillPath": "skills/orderly-plugin-write/SKILL.md",
+      "computedHash": "aac9bd99043b695584644358136804cc24948302411c41e5a0bf8912d87fbf7c"
+    }
+  }
+}
